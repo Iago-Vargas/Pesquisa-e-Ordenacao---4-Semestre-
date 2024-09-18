@@ -1,0 +1,31 @@
+# Prova
+1) O que é ordenação e qual o seu papel nos sistemas de informação?
+-- A ordenação é o processo de organizar dados em uma sequência específica, essencial nos sistemas de informação porque facilita a busca,
+   melhora a análise, aprimora a apresentação e otimiza o desempenho dos algoritmos. Dados ordenados tornam a localização e compreensão das informações mais eficientes, essenciais para o gerenciamento eficaz de grandes volumes de dados.
+
+2) Como se calcula ou se mede a complexidade em algoritmos de ordenação?
+-- A complexidade em algoritmos de ordenação é medida em complexidade temporal (tempo de execução) e complexidade espacial (uso de memória).
+
+3) Novamente, no contexto de algoritmos de ordenação, há algoritmos estáveis e instáveis. Explique o que isso significa.
+-- Algoritmos de ordenação estáveis mantêm a ordem relativa de elementos iguais, enquanto algoritmos instáveis não garantem essa ordem.
+   Por exemplo, se dois elementos com o mesmo valor aparecem na lista, um algoritmo estável preserva a ordem original, enquanto um instável pode trocá-los.
+
+4) Dos algoritmos estudados (bolha, seleção, inserção e pente), há um desses que tem um desempenho muito bom. Qual é? E qual o recurso computacional que ele utiliza para ser tão melhor que os outros? Explique a resposta.
+-- O algoritmo inserção tem um desempenho melhor em listas quase ordenadas. Ele utiliza o recurso de inserção sequencial, onde os elementos são comparados e inseridos na posição correta, permitindo que o algoritmo avance rapidamente em dados já organizados.
+
+5) Observe a sequencia de números no vetor:
+    0   1   2   3   4   5   6   - indices
+    7   3   5   1   8   2   5   - valores
+
+    a) quantas comparações e trocas vão ocorrer usando o bolha?
+    b) quantas comparações e trocas vão ocorrer usando o pente?
+-- a) No método de ordenação bolha, serão feitas 21 comparações e 10 trocas.
+-- b) No método de ordenação pente, as comparações e trocas podem variar, mas geralmente resultam em um número menor de comparações e trocas em relação ao bolha, dependendo da implementação.
+
+6) Dos métodos estudados (bolha, seleção, inserção e pente), quais são estáveis e quais são instáveis?
+-- Estáveis: Insertion Sort, Bubble Sort
+-- Instáveis: Selection Sort, Pente Sort
+
+7) No processo de ordenação de listas contendo objetos, como pessoas que derivam da classe Pessoa(nome, email, telefone, curso), para usar o método sort() em Java ou C Sharp é preciso realizar alterações na classe Pessoa para que a ordenação ocorra corretamente. Exemplifique e explique qual(is) é(são) essa(s) alterações? Assuma que o atributo chave de ordenação da classe pessoa é nome seguido de curso.
+-- Para usar o método sort() em Java ou C#, a classe Pessoa deve implementar a interface de comparação, como Comparable ou sobrecarregar o método compareTo().
+-- A comparação deve ser feita primeiro pelo nome e, em caso de empate, pelo curso. Isso garante que a ordenação seja feita corretamente de acordo com os critérios desejados.
